@@ -1,0 +1,39 @@
+@import "---Foundation/variables.less"; // 1. -- FOUNDATION -- Can contain values needed in all other files
+@import "---Foundation/mixins.less"; // 2. -- FOUNDATION -- Contains mixin values used through the site styles
+@import "---Foundation/base.less"; // 3. -- FOUNDATION -- !!! -- BASE OF DEV -- Official start of actual site structure
+
+
+
+@import "--Framework/grid.less"; // 4. -- FRAMEWORK -- Grid structure of site -- Normally used within wrappers.less structure
+@import "--Framework/forms.less"; // 5. -- FRAMEWORK -- Structure of forms throughout the site
+@import "--Framework/buttons.less"; // 6. -- FRAMEWORK -- All base button styles
+@import "--Framework/iconic-theme.less"; // 7. -- FRAMEWORK -- All base icon styles
+
+
+
+@import "-Cosmetics/navigation.less"; // 8. -- COSMETICS -- Navigation for site
+@import "-Cosmetics/layout.less"; // 9. -- COSMETICS -- Layout for site
+
+
+
+// -------------------------------------------------------------------------------------------------------------------
+// GENERAL CORE STYLES
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+/*.wf-inactive {
+    &body {
+        font-family: 'Segoe UI', 'Helvetica', Arial, sans-serif;
+    }
+}
+
+.wf-active {
+    &body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-size: 16px;
+        font-family: @content-text, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+    }
+}*/

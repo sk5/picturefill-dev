@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+<head>
+    <title>Partlee Cloudy</title>
+    <link rel="stylesheet" type="text/css" href="Resources/CSS/core.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/Fonts/FontAwesome/font-awesome.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:300,400,700|Raleway:400,600,800|Alike' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One|Hammersmith+One' rel='stylesheet' type='text/css'>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    <script src="Resources/Scripts/Angular/App.js"></script>
+    <script src="Resources/Scripts/Angular/Controller.js"></script>
+    <script src="Resources/Scripts/Angular/Factories.js"></script>
+    
+    <script src="Resources/Scripts/picturefill.js"></script>
+    <script src="Resources/Scripts/picturefill.angular.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    
+    <!-- ANGULAR PARTIAL -- Load navigation elements -->
+    <div ng-include src="'Partials/navigation.html'"></div>
+
+    <!-- ANGULAR VIEW -- Element only defines width -->
+    <div ng-view>
+
+    </div>
+
+</body>
+
+</html>

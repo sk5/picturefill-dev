@@ -1,0 +1,30 @@
+<!-- ANGULAR PARTIAL -- Load home-feature -->
+<div ng-include src="'Partials/home-feature.html'"></div>
+
+<div class="wrapper-home-content">
+    
+    <div ng-repeat="post in posts" class="home-article-item {{post.cssStoryImage}} {{post.cssStorySize}}">
+
+        <article class="home-article">
+            <header class="home-header">
+                <h2 class="lead-in-title">{{post.title}}</h2>
+                <h4 class="lead-in-sub-title">{{post.subtitle}}</h4>
+                <a class="read-this link" href="#/post/{{post.url}}">
+                    Continue reading
+                    <img data-src="Resources/Icons/caret.svg" class="iconic" alt="caret">
+                </a>
+            </header>
+        </article>
+
+        <section class="home-section">
+            <span picture-fill data-alt="What">
+                <span pf-src="{{post.image620}}"></span>
+                <span pf-src="{{post.image700}}" data-media="(min-width: 621px)"></span>
+                <span pf-src="{{post.image900}}" data-media="(min-width: 850px)"></span>
+                <span pf-src="{{post.imagefull}}" data-media="(min-width: 932px)"></span>
+            </span>
+        </section>
+
+    </div>
+    
+</div>

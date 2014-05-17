@@ -1,0 +1,71 @@
+// -------------------------------------------------------------------------------------------------------------------
+// MIXINS - CLEEARFIX
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------
+// MIXINS - FLEXBOX
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    // This just was -webkit-flex and it did not work in safari -- must be -webkit-flexbox
+    display: -webkit-flexbox;
+    display: flex;
+}
+
+.flex-space(@flex-space) {
+    -ms-flex: @flex-space;
+    -mz-box-flex: @flex-space;
+    -webkit-box-flex: @flex-space;
+    -webkit-flex: @flex-space;
+    flex: @flex-space;
+}
+
+.flex-align(@flex-align) {
+//    display: -webkit-box;
+//    display: -moz-box;
+//    display: -ms-flexbox;
+//    display: -webkit-flex;
+//    display: flex;
+    
+//    display: block;
+
+    justify-content: center; 
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------
+// MIXINS - ANIMATIONS
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+
+.transition(@element, @time, @animation-type) {
+    -webkit-transition: @element @time @animation-type;
+    -moz-transition: @element @time @animation-type;
+    -o-transition: @element @time @animation-type;
+    transition: @element @time @animation-type;
+}

@@ -1,0 +1,43 @@
+/* Iconic theme rules. Don't delete! */
+
+@blue-medium: #0064BF;
+@blue-dark: #10131C;
+
+.iconic-color(@color) {
+	fill: @color;
+	stroke: @color;
+}
+
+/* Hide all icons that are waiting to be injected */
+img.iconic {
+  display: none;
+}
+
+/* Make sure filled and text elements only get fills */
+.iconic-property-fill, .iconic-property-text {
+	stroke: none !important;
+}
+
+/* Make sure stroked elements only get strokes */
+.iconic-property-stroke {
+	fill: none !important;
+}
+
+/* Theme-specific rules */
+
+.iconic * {
+	// Main color goes here
+    fill: @blue-medium;
+    stroke: @blue-medium;
+}
+
+.iconic-property-accent {
+    fill: @blue-dark;
+    stroke: @blue-dark;
+}
+
+.iconic .iconic-style-accent {
+	// Accent color goes here
+    fill: @blue-dark;
+    stroke: @blue-dark;
+}

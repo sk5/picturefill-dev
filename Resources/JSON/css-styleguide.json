@@ -1,0 +1,11 @@
+{
+    "title": "The article title",
+    "subtitle": "Article sub-title",
+    "cssFeatureImageSize": "full",
+    "imageDesc": "Testing image title",
+    "imagefull": "Content/CSS-Styleguides/Home/article-bg.jpg",
+    "image900": "Content/CSS-Styleguides/Home/900-article-bg.jpg",
+    "image700": "Content/CSS-Styleguides/Home/700-article-bg.jpg",
+    "image620": "Content/CSS-Styleguides/Home/620-article-bg.jpg",
+    "article": "<p>This is some text to fill in the content</p>"
+}

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-size: 16px;
+}
+[class*="link"] {
+  text-decoration: none;
+}
+[class^="title"],
+[class^="sub-title"] {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  line-height: 1.25em;
+}
+.right {
+  float: right;
+}

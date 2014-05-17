@@ -1,0 +1,166 @@
+// -------------------------------------------------------------------------------------------------------------------
+// MIXIN -- BUTTON -- ADD THIS TO ALL BUTTONS TO DEFINE DECORATION
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+.button-styles() {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0 1em;
+    border: none;
+    font-size: 1em;
+    line-height: 2.5em;
+    text-decoration: none;
+    background: @button-background-color;
+    font-family: @content-text;
+    color: @button-font-color;
+    cursor: pointer;
+
+    //
+    // ON BUTTON HOVER/ACTIVE DARKEN THE BACKGROUND COLOR
+    //
+
+    &:hover {
+        background: darken(@button-background-color, 10%);
+    }
+    &.active {
+        background: darken(@button-background-color, 5%);
+
+        &:hover {
+            background: darken(@button-background-color, 10%);
+        }
+    }
+
+    //
+    // BUTTON - WHITE STATE
+    //
+
+    &[class*="white"] {
+        background: #fff;
+        color: @button-background-color;
+
+        &:hover {
+            background: rgba(0,0,0,.25);
+            color: #fff;
+        }
+    }
+
+    //
+    // BUTTON - MUTED STATE
+    //
+
+    &[class*="muted"] {
+        background: @grey-light;
+        color: @button-background-color;
+
+        &:hover {
+            background: darken(@button-background-color, 10%);
+            color: @button-font-color;
+        }
+
+        &.active {
+            background: darken(@button-background-color, 10%);
+            color: @button-font-color;
+        }
+    }
+
+
+    // BUTTON FOCUS STYLE
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------
+// BUTTON
+// -------------------------------------------------------------------------------------------------------------------
+
+
+
+[class^="button"] {
+    @button-background-color: #dfdfdf;
+    @button-font-color: #3f3f3f;
+    .button-styles(); 
+
+    //
+    // BUTTON -- TRANSPARENT -- FOR BUTTONS WHICH SHOULD INHERIT THE COLOR OF THEIR PARENT BACKGROUND
+    //
+
+    &[class*="-transparent"] {
+        @button-background-color: transparent;
+        @button-font-color: rgba(0,0,0,.75);
+        .button-styles();
+        // BUTTON HOVER -- 10% BLACK ON HOVER WHICH WILL SLIGHTLY DARKEN PARENTS BACKGROUND COLOR
+        &:hover {
+            background: rgba(0,0,0,.10);
+        }
+
+        &.active {
+            background: rgba(0,0,0,.05);
+        }
+    }
+
+    //
+    // BUTTON HIGHLIGHT SECTION
+    //
+
+    &[class*="-highlight"] {
+        @button-background-color: darken(@green, 15%);
+        @button-font-color: #fff;
+        .button-styles();
+    }
+
+    //
+    // BUTTON SUBMIT
+    //
+
+    &[class*="-submit"], &[class*="-create"], &[class*="-release"], &[class*="-add"] {
+        @button-background-color: @green;
+        @button-font-color: #fff;
+        .button-styles();
+    }
+
+    //
+    // BUTTON CANCEL, DELETE
+    //
+
+    &[class*="-cancel"], &[class*="-delete"], &[class*="-close"], &[class*="-important"], &[class*="-back"] {
+        @button-background-color: @red;
+        @button-font-color: #fff;
+        .button-styles();
+    }
+
+    //
+    // BUTTON EDIT
+    //
+
+    &[class*="-edit"], &[class*="-logout"] {
+        @button-background-color: @yellow;
+        @button-font-color: #fff;
+        .button-styles();
+    }
+
+    //
+    // BUTTON VIEW
+    //
+
+    &[class*="-view"] {
+        @button-background-color: @blue-medium;
+        @button-font-color: #fff;
+        .button-styles();
+    }
+
+    //
+    // BUTTON SEARCH
+    //
+
+    &[class*="-search"] {
+        @button-background-color: @grey;
+        @button-font-color: #fff;
+        .button-styles();
+    }
+}

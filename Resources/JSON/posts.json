@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Developing a CSS Styleguide",
+        "subtitle": "Making your CSS a more organized mess...",
+        "imagefull": "Content/CSS-Styleguides/Home/article-bg.jpg",
+        "image900": "Content/CSS-Styleguides/Home/900-article-bg.jpg",
+        "image700": "Content/CSS-Styleguides/Home/700-article-bg.jpg",
+        "image620": "Content/CSS-Styleguides/Home/620-article-bg.jpg",
+        "cssStoryImage": "full",
+        "cssStorySize": "x-large",
+        "url": "css-styleguide"
+    },
+    {
+        "id": 2,
+        "title": "Become iconic",
+        "subtitle": "Getting started with the iconic icon system",
+        "imagefull": "Content/Become-iconic/Home/article-bg.jpg",
+        "image900": "Content/Become-iconic/Home/900-article-bg.jpg",
+        "image700": "Content/Become-iconic/Home/700-article-bg.jpg",
+        "image620": "Content/Become-iconic/Home/620-article-bg.jpg",
+        "cssStoryImage": "normal",
+        "cssStorySize": "large",
+        "url": "become-iconic"
+    },
+    {
+        "id": 3,
+        "title": "Making the grade",
+        "subtitle": "Building a better gradebook",
+        "imagefull": "Content/Making-the-grade/Home/article-bg.jpg",
+        "image900": "Content/Making-the-grade/Home/900-article-bg.jpg",
+        "image700": "Content/Making-the-grade/Home/700-article-bg.jpg",
+        "image620": "Content/Making-the-grade/Home/620-article-bg.jpg",
+        "cssStoryImage": "normal",
+        "cssStorySize": "large",
+        "url": "making-the-grade"
+    }
+    
+]

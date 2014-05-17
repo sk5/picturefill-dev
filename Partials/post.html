@@ -1,0 +1,46 @@
+<div class="wrapper padding">
+
+    <div class="wrapper-article-image">
+        <div class="article-top-image {{post.cssFeatureImageSize}}">
+            <span picture-fill data-alt="{{post.imageDesc}}">
+                <span pf-src="{{post.image620}}"></span>
+                <span pf-src="{{post.image700}}" data-media="(min-width: 621px)"></span>
+                <span pf-src="{{post.image900}}" data-media="(min-width: 850px)"></span>
+                <span pf-src="{{post.imagefull}}" data-media="(min-width: 932px)"></span>
+            </span>
+        </div>
+
+        <div class="read-article js-scroll-to-article">
+            <img id="icon-read-article" data-src="Resources/Icons/chevron.svg" class="iconic iconic-fluid" data-direction="bottom" alt="chevron" />
+        </div>
+    </div>
+
+</div>
+
+<div class="wrapper-article-title">
+
+    <div class="article-title {{post.cssFeatureImageSize}}">
+
+        <h1 class="title">{{post.title}}</h1>
+        <h4 class="sub-title">{{post.subtitle}}</h4>
+
+    </div>
+
+</div>
+
+<div class="wrapper-article">
+
+    <div class="article {{post.cssFeatureImageSize}}">
+
+        <div class="article-read-time"><span ng-bind="countOf(post.article) / 300 | number:0"></span> min read</div>
+
+        <span class="article-content" ng-bind-html="post.article"></span>
+
+    </div>
+
+</div>
+
+<script src="Resources/Scripts/jquery.event.move.js"></script>
+<script src="Resources/Scripts/jquery.twentytwenty.js"></script>
+<script src="Resources/Scripts/imagesloaded.js"></script>
+<script src="Resources/Scripts/articles.js"></script>
